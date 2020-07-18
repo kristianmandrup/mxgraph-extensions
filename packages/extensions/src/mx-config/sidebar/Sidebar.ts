@@ -1,11 +1,12 @@
 // See: https://johnresig.com/blog/simple-javascript-inheritance/
-import { Class } from "../Class";
-import { HoverIcons } from "../../hover";
+import { extend } from "../extend";
+import { ClassMap } from "../ClassMap";
+const { HoverIcons } = ClassMap;
 
 const proto = HoverIcons.prototype;
 
 // TODO: move to sidebar module
-export const Sidebar = Class.extend({
+export const Sidebar = extend({
   triangleUp: proto.triangleUp,
   triangleRight: proto.triangleRight,
   triangleDown: proto.triangleDown,

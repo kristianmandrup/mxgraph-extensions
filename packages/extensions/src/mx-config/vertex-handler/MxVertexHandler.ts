@@ -14,8 +14,9 @@ const {
 
 // See: https://johnresig.com/blog/simple-javascript-inheritance/
 // http://dean.edwards.name/base/Base.js
-import Base from "../Base";
-import { HoverIcons } from "../../hover/HoverIcons";
+import { extend } from "../extend";
+import { ClassMap } from "../ClassMap";
+const { HoverIcons } = ClassMap;
 import { formatHintText } from "../helpers";
 
 const createHint = () => {};
@@ -34,7 +35,7 @@ const { rotationHandle } = hoverProto;
 
 // ...mxVertexHandler.prototype,
 
-export const MxVertexHandler = Base.extend([mxVertexHandler], {
+export const MxVertexHandler = extend([mxVertexHandler], {
   // $$init: function (state) {
   //   mxVertexHandler.apply(this, [state]);
   // },

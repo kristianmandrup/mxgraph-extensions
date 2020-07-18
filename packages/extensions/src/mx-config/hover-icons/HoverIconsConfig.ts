@@ -1,4 +1,5 @@
-import { HoverIcons } from "../../hover/HoverIcons";
+import { ClassMap } from "../ClassMap";
+const { HoverIcons } = ClassMap;
 import { imgMap } from "./images";
 
 export class HoverIconsConfig {

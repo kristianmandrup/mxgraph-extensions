@@ -1,8 +1,8 @@
 import mx from "@mxgraph-app/mx";
 const { mxEvent, mxGraphHandler } = mx;
-import { Class } from "../../Class";
+import { extend } from "../../extend";
 
-export const MxGraphHandler = Class.extend({
+export const MxGraphHandler = extend({
   $$init: function (graph) {
     mxGraphHandler.apply(this, [graph]);
   },

@@ -1,9 +1,10 @@
 import mx from "@mxgraph-app/mx";
-import { Class } from "../Class";
-import { Graph } from "../../graph";
+import { extend } from "../extend";
 const { mxPoint, mxUtils, mxConnector, mxConstants } = mx;
+import { ClassMap } from "../ClassMap";
+const { Graph } = ClassMap;
 
-export const MxConstraintHandler = Class.extend({
+export const MxConstraintHandler = extend({
   /**
    * Overrides painting the actual shape for taking into account jump style.
    */

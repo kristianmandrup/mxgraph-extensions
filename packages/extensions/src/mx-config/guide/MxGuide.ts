@@ -2,7 +2,7 @@ import mx from "@mxgraph-app/mx";
 const { mxEvent, mxGuide, mxPolyline, mxConstants } = mx;
 
 // See: https://johnresig.com/blog/simple-javascript-inheritance/
-import { Class } from "../Class";
+import { extend } from "../extend";
 
 /**
  *
@@ -10,7 +10,7 @@ import { Class } from "../Class";
  * const graph = {};
  * new MxCellEditor(graph);
  */
-export const MxGuide = Class.extend({
+export const MxGuide = extend({
   $$init: function (graph, states) {
     mxGuide.apply(this, [graph, states]);
   },

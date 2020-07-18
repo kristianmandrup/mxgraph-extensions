@@ -2,8 +2,9 @@ import mx from "@mxgraph-app/mx";
 const { mxUtils, mxRectangle, mxEvent, mxRubberband } = mx;
 
 // See: https://johnresig.com/blog/simple-javascript-inheritance/
-import { Class } from "../Class";
-import { HoverIcons } from "../../hover/HoverIcons";
+import { extend } from "../extend";
+import { ClassMap } from "../ClassMap";
+const { HoverIcons } = ClassMap;
 
 /**
  *
@@ -11,7 +12,7 @@ import { HoverIcons } from "../../hover/HoverIcons";
  * const graph = {};
  * new MxRubberband(graph);
  */
-export const MxRubberband = Class.extend({
+export const MxRubberband = extend({
   $$init: function (graph) {
     mxRubberband.apply(this, [graph]);
   },

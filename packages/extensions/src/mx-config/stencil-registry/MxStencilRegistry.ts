@@ -1,8 +1,8 @@
 import mx from "@mxgraph-app/mx";
 const { mxStencil, mxConstants, mxUtils, mxStencilRegistry } = mx;
-import { Class } from "../Class";
+import { extend } from "../extend";
 
-export const MxStencilRegistry = Class.extend({
+export const MxStencilRegistry = extend({
   /**
    * Overrides stencil registry for dynamic loading of stencils.
    */

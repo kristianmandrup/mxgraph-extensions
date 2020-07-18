@@ -1,5 +1,6 @@
 import mx from "@mxgraph-app/mx";
-import { HoverIcons } from "../../hover/HoverIcons";
+import { ClassMap } from "../ClassMap";
+const { HoverIcons } = ClassMap;
 const { mxClient } = mx;
 
 export class PrefetchImages {

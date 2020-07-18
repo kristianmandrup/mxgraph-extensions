@@ -2,7 +2,7 @@ import mx from "@mxgraph-app/mx";
 const { mxRectangle, mxUtils, mxEvent, mxGraphHandler } = mx;
 
 // See: https://johnresig.com/blog/simple-javascript-inheritance/
-import { Class } from "../Class";
+import { extend } from "../extend";
 import { formatHintText } from "../helpers";
 
 /**
@@ -11,7 +11,7 @@ import { formatHintText } from "../helpers";
  * const graph = {};
  * new MxCellEditor(graph);
  */
-export const MxGraphHandler = Class.extend({
+export const MxGraphHandler = extend({
   $$init: function (graph) {
     mxGraphHandler.apply(this, [graph]);
   },

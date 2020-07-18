@@ -7,7 +7,7 @@ const {
   mxConstants,
   mxUtils,
 } = mx;
-import { Class } from "../Class";
+import { extend } from "../extend";
 
 // See: https://johnresig.com/blog/simple-javascript-inheritance/
 /**
@@ -16,7 +16,7 @@ import { Class } from "../Class";
  * const graph = {};
  * new MxCellEditor(graph);
  */
-export const MxCellEditor = Class.extend({
+export const MxCellEditor = extend({
   documentMode: document["documentMode"],
 
   $$init: function (graph) {

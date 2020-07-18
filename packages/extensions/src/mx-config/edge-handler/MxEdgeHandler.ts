@@ -1,6 +1,7 @@
 import mx from "@mxgraph-app/mx";
 import { formatHintText } from "../helpers";
-import { HoverIcons } from "../../hover/HoverIcons";
+import { ClassMap } from "../ClassMap";
+const { HoverIcons } = ClassMap;
 const {
   mxRectangleShape,
   mxRectangle,
@@ -14,7 +15,7 @@ const {
 } = mx;
 
 // See: https://johnresig.com/blog/simple-javascript-inheritance/
-import { Class } from "../Class";
+import { extend } from "../extend";
 
 /**
  *
@@ -22,7 +23,7 @@ import { Class } from "../Class";
  * const graph = {};
  * new MxCellEditor(graph);
  */
-export const MxEdgeHandler = Class.extend({
+export const MxEdgeHandler = extend({
   documentMode: document["documentMode"],
 
   $$init: function (state) {

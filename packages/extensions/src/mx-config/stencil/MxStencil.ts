@@ -2,12 +2,12 @@ import mx from "@mxgraph-app/mx";
 const { mxStencil } = mx;
 
 // See: https://johnresig.com/blog/simple-javascript-inheritance/
-import { Class } from "../Class";
+import { extend } from "../extend";
 
 /**
  *
  */
-export const MxStencil = Class.extend({
+export const MxStencil = extend({
   /**
    * Adds support for placeholders in text elements of shapes.
    */

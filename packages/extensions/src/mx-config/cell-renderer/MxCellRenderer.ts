@@ -1,12 +1,11 @@
 import mx from "@mxgraph-app/mx";
 import pako from "pako";
 const { mxConstants, mxStencil, mxShape, mxUtils, mxCellRenderer } = mx;
+import { extend } from "../extend";
+import { ClassMap } from "../ClassMap";
+const { Graph } = ClassMap;
 
-const Graph: any = {};
-
-import { Class } from "../Class";
-
-export const MxCellRenderer = Class.extend({
+export const MxCellRenderer = extend({
   /**
    * Handling of special nl2Br style for not converting newlines to breaks in HTML labels.
    * NOTE: Since it's easier to set this when the label is created we assume that it does

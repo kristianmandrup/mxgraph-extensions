@@ -1,14 +1,13 @@
 import mx from "@mxgraph-app/mx";
-import { HoverIcons } from "../../hover/HoverIcons";
 const { mxEllipse, mxConstraintHandler, mxEvent, mxConstants } = mx;
-import { Class } from "../Class";
-import { Graph } from "../../graph";
-
+import { extend } from "../extend";
+import { ClassMap } from "../ClassMap";
+const { Graph, HoverIcons } = ClassMap;
 const { createSvgImage } = Graph;
 const proto = HoverIcons.prototype;
 const { arrowFill } = proto;
 
-export const MxConstraintHandler = Class.extend({
+export const MxConstraintHandler = extend({
   isEnabled: function () {
     return this.graph.connectionHandler.isEnabled();
   },

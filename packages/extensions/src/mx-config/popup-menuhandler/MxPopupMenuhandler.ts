@@ -1,6 +1,6 @@
-import { Class } from "../Class";
+import { extend } from "../extend";
 
-export const MxPopupMenuhandler = Class.extend({
+export const MxPopupMenuhandler = extend({
   // Returns last selected ancestor
   getCellForPopupEvent: function (me) {
     var cell = me.getCell();

@@ -1,9 +1,9 @@
 import mx from "@mxgraph-app/mx";
 const { mxOutline } = mx;
-
 // See: https://johnresig.com/blog/simple-javascript-inheritance/
-import { Class } from "../Class";
-import { HoverIcons } from "../../hover/HoverIcons";
+import { extend } from "../extend";
+import { ClassMap } from "../ClassMap";
+const { HoverIcons } = ClassMap;
 
 /**
  *
@@ -11,7 +11,7 @@ import { HoverIcons } from "../../hover/HoverIcons";
  * const graph = {};
  * new MxCellEditor(graph);
  */
-export const MxOutline = Class.extend({
+export const MxOutline = extend({
   init: function (source, container) {
     mxOutline.apply(this, [source, container]);
   },

@@ -1,12 +1,11 @@
 import mx from "@mxgraph-app/mx";
-import { HoverIcons } from "../../hover/HoverIcons";
 import resources from "@mxgraph-app/resources";
-import { Graph } from "../../graph";
+import { ClassMap } from "../ClassMap";
+const { Graph, HoverIcons } = ClassMap;
 const { mxClient, mxImage } = mx;
 const { IMAGE_PATH } = resources;
 
 const { arrowFill } = HoverIcons.prototype;
-
 const { createSvgImage } = Graph;
 
 // TODO: Increase handle padding

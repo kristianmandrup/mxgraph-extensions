@@ -6,9 +6,9 @@ const {
   mxCellMarker,
   mxConnectionHandler,
 } = mx;
-import { Class } from "../Class";
+import { extend } from "../extend";
 
-export const MxConnectionHandler = Class.extend({
+export const MxConnectionHandler = extend({
   // Disables connection points
   $$init: function () {
     var connectionHandlerInit = mxConnectionHandler.prototype.init;

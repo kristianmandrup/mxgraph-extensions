@@ -1,9 +1,9 @@
-import { Class } from "../Class";
+import { extend } from "../extend";
 
 /**
  *
  */
-export const MxConstants = Class.extend({
+export const MxConstants = extend({
   // Sets colors for handles
   HANDLE_FILLCOLOR: "#29b6f2",
   HANDLE_STROKECOLOR: "#0088cf",

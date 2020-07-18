@@ -14,7 +14,7 @@ const {
 } = mx;
 
 // See: https://johnresig.com/blog/simple-javascript-inheritance/
-import { Class } from "../Class";
+import { extend } from "../extend";
 import { formatHintText } from "../helpers";
 
 /**
@@ -23,7 +23,7 @@ import { formatHintText } from "../helpers";
  * const graph = {};
  * new MxCellEditor(graph);
  */
-export const MxGraphView = Class.extend({
+export const MxGraphView = extend({
   $$init: function (graph) {
     mxGraphView.apply(this, [graph]);
   },

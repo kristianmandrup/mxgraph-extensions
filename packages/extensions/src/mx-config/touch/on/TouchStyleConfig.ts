@@ -1,10 +1,11 @@
 import mx from "@mxgraph-app/mx";
-import { Graph } from "packages/graph/src/graph/Graph";
+import { ClassMap } from "../../ClassMap";
 import { MxPanningHandler } from "./MxPanningHandler";
 import { MxConstraintHandler } from "./MxConstraintHandler";
 import { MxGraphHandler } from "./MxGraphHandler";
 const { mxVertexHandler, mxEdgeHandler, mxShape, mxClient } = mx;
-// import { Class } from "../../Class";
+const { Graph } = ClassMap;
+// import { extend } from "../../extend";
 
 /**
  * Usage:

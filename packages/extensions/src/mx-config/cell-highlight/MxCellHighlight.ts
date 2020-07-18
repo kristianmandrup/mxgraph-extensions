@@ -1,8 +1,8 @@
 import mx from "@mxgraph-app/mx";
-import { Base } from "../base";
+import { extend } from "../extend";
 const { mxCellHighlight } = mx;
 
-export const MxCellHighlight = Base.extend([mxCellHighlight], {
+export const MxCellHighlight = extend([mxCellHighlight], {
   keepOnTop: true,
 
   /**
