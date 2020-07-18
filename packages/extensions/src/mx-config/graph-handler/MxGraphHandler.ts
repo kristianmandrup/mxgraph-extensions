@@ -11,7 +11,7 @@ import { formatHintText } from "../helpers";
  * const graph = {};
  * new MxCellEditor(graph);
  */
-export const MxGraphHandler = extend({
+export const MxGraphHandler = extend([mxGraphHandler], {
   $$init: function (graph) {
     mxGraphHandler.apply(this, [graph]);
   },

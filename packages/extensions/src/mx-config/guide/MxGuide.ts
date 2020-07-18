@@ -10,7 +10,7 @@ import { extend } from "../extend";
  * const graph = {};
  * new MxCellEditor(graph);
  */
-export const MxGuide = extend({
+export const MxGuide = extend([mxGuide], {
   $$init: function (graph, states) {
     mxGuide.apply(this, [graph, states]);
   },

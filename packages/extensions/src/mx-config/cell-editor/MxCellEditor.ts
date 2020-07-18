@@ -16,7 +16,7 @@ import { extend } from "../extend";
  * const graph = {};
  * new MxCellEditor(graph);
  */
-export const MxCellEditor = extend({
+export const MxCellEditor = extend([mxCellEditor], {
   documentMode: document["documentMode"],
 
   $$init: function (graph) {

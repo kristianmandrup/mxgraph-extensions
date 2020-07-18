@@ -1,9 +1,11 @@
 import { extend } from "../extend";
+import mx from "@mxgraph-app/mx";
+const { mxConstants } = mx;
 
 /**
  *
  */
-export const MxConstants = extend({
+export const MxConstants = extend([mxConstants], {
   // Sets colors for handles
   HANDLE_FILLCOLOR: "#29b6f2",
   HANDLE_STROKECOLOR: "#0088cf",

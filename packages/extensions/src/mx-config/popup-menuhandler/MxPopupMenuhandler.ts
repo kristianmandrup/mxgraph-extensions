@@ -1,6 +1,8 @@
+import mx from "@mxgraph-app/mx";
+const { mxPopupMenuHandler } = mx;
 import { extend } from "../extend";
 
-export const MxPopupMenuhandler = extend({
+export const MxPopupMenuhandler = extend([mxPopupMenuHandler], {
   // Returns last selected ancestor
   getCellForPopupEvent: function (me) {
     var cell = me.getCell();

@@ -7,7 +7,7 @@ import { extend } from "../extend";
 /**
  *
  */
-export const MxStencil = extend({
+export const MxStencil = extend([mxStencil], {
   /**
    * Adds support for placeholders in text elements of shapes.
    */

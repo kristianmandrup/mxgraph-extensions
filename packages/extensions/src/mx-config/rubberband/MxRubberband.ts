@@ -12,7 +12,7 @@ const { HoverIcons } = ClassMap;
  * const graph = {};
  * new MxRubberband(graph);
  */
-export const MxRubberband = extend({
+export const MxRubberband = extend([mxRubberband], {
   $$init: function (graph) {
     mxRubberband.apply(this, [graph]);
   },

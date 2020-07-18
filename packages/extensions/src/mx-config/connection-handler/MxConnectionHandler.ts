@@ -8,7 +8,7 @@ const {
 } = mx;
 import { extend } from "../extend";
 
-export const MxConnectionHandler = extend({
+export const MxConnectionHandler = extend([mxConnectionHandler], {
   // Disables connection points
   $$init: function () {
     var connectionHandlerInit = mxConnectionHandler.prototype.init;

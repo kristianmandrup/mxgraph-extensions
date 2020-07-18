@@ -2,7 +2,7 @@ import mx from "@mxgraph-app/mx";
 const { mxPanningHandler, mxEvent } = mx;
 import { extend } from "../../extend";
 
-export const MxPanningHandler = extend({
+export const MxPanningHandler = extend([mxPanningHandler], {
   $$init: function (graph) {
     mxPanningHandler.apply(this, [graph]);
   },

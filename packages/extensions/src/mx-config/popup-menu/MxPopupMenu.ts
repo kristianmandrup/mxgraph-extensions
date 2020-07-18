@@ -2,7 +2,7 @@ import mx from "@mxgraph-app/mx";
 const { mxEvent, mxPopupMenu } = mx;
 import { extend } from "../extend";
 
-export const MxPopupMenuhandler = extend({
+export const MxPopupMenuhandler = extend([mxPopupMenu], {
   /**
    * Consumes click events for disabled menu items.
    */

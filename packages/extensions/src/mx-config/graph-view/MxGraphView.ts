@@ -23,7 +23,7 @@ import { formatHintText } from "../helpers";
  * const graph = {};
  * new MxCellEditor(graph);
  */
-export const MxGraphView = extend({
+export const MxGraphView = extend([mxGraphView], {
   $$init: function (graph) {
     mxGraphView.apply(this, [graph]);
   },

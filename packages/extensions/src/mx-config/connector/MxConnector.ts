@@ -4,7 +4,7 @@ const { mxPoint, mxUtils, mxConnector, mxConstants } = mx;
 import { ClassMap } from "../ClassMap";
 const { Graph } = ClassMap;
 
-export const MxConstraintHandler = extend({
+export const MxConstraintHandler = extend([mxConnector], {
   /**
    * Overrides painting the actual shape for taking into account jump style.
    */

@@ -2,7 +2,7 @@ import mx from "@mxgraph-app/mx";
 const { mxUtils, mxConstants, mxPoint, mxGraph } = mx;
 import { extend } from "../extend";
 
-export const MxPopupMenuhandler = extend({
+export const MxPopupMenuhandler = extend([mxGraph], {
   updatePageBreaks: function (visible, width, height) {
     const graphUpdatePageBreaks = mxGraph.prototype.updatePageBreaks;
     var useCssTranforms = this.useCssTransforms,

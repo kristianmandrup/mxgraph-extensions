@@ -7,7 +7,7 @@ const { createSvgImage } = Graph;
 const proto = HoverIcons.prototype;
 const { arrowFill } = proto;
 
-export const MxConstraintHandler = extend({
+export const MxConstraintHandler = extend([mxConstraintHandler], {
   isEnabled: function () {
     return this.graph.connectionHandler.isEnabled();
   },

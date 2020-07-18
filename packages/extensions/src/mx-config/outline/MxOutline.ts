@@ -11,7 +11,7 @@ const { HoverIcons } = ClassMap;
  * const graph = {};
  * new MxCellEditor(graph);
  */
-export const MxOutline = extend({
+export const MxOutline = extend([mxOutline], {
   init: function (source, container) {
     mxOutline.apply(this, [source, container]);
   },

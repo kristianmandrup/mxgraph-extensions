@@ -5,7 +5,7 @@ import { extend } from "../extend";
 import { ClassMap } from "../ClassMap";
 const { Graph } = ClassMap;
 
-export const MxCellRenderer = extend({
+export const MxCellRenderer = extend([mxCellRenderer], {
   /**
    * Handling of special nl2Br style for not converting newlines to breaks in HTML labels.
    * NOTE: Since it's easier to set this when the label is created we assume that it does

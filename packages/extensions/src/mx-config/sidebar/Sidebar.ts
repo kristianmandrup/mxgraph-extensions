@@ -6,7 +6,7 @@ const { HoverIcons } = ClassMap;
 const proto = HoverIcons.prototype;
 
 // TODO: move to sidebar module
-export const Sidebar = extend({
+export const Sidebar = extend([ClassMap.Sidebar || {}], {
   triangleUp: proto.triangleUp,
   triangleRight: proto.triangleRight,
   triangleDown: proto.triangleDown,
